@@ -17,4 +17,4 @@ RUN apk update && \
     do \
       java -jar BuildTools.jar --rev $MC_VERSION; \
     done && \
-    rm BuildTools.log.txt
+    rm -rf BuildTools.log.txt work
