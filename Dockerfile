@@ -14,7 +14,7 @@ RUN apk update && \
       perl -nle 'print $& if m{(?<=")\d+\.\d+(?:\.\d+)?(?=\.json")}' | \
       sort -ut. -k 1,1nr -k 2,2nr -k 3,3nr \
     );  \
-    do \Also isntall 
+    do \
       java -jar BuildTools.jar --rev $MC_VERSION; \
     done && \
     rm -rf BuildTools.log.txt work
